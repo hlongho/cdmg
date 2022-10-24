@@ -38,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_maps_flutter: ^2.2.1
   intl: ^0.17.0
+  webview_flutter: ^3.0.4
 
 dev_dependencies:
   flutter_test:
@@ -73,6 +74,7 @@ flutter:
     - assets/images/minus.png
     - assets/images/plus.png
     - assets/images/back.png
+    - assets/images/right.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
