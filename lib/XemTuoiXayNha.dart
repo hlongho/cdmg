@@ -1,5 +1,6 @@
 import 'dart:developer';
 import 'package:cdmg/view/SubPlusValue.dart';
+import 'package:cdmg/view/TitleBar.dart';
 import 'package:intl/intl.dart';
 
 import 'package:cdmg/view/InputWithDescribe.dart';
@@ -61,22 +62,11 @@ class _xemTuoiXayNha extends State<XemTuoiXayNha> {
                 child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Image.asset('assets/images/back.png', height: 16, width: 8),
-                    SizedBox(width: 20),
-                    Text(
-                      "Xem tuổi xây nhà",
-                      style: TextStyle(
-                          color: Color(0xFF222222),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w600),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: 16,
-                ),
+                TitleBar(
+                    title: "Xem tuổi xây nhà",
+                    callbackFunction: () {
+                      Navigator.pop(context);
+                    }),
                 OptionText(
                     title: 'Năm sinh của gia chủ',
                     titleSelectOption: "Năm sinh của gia chủ",

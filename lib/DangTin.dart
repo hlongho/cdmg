@@ -3,6 +3,7 @@ import 'package:cdmg/view/OptionText.dart';
 import 'package:cdmg/model/MoTaCoBanModel.dart';
 import 'package:cdmg/model/ThongTinCoBanModel.dart';
 import 'package:cdmg/view/StepEditting.dart';
+import 'package:cdmg/view/TitleBar.dart';
 import 'package:flutter/material.dart';
 
 import 'MoTa.dart';
@@ -47,24 +48,15 @@ class _dangTin extends State<DangTin> {
                   padding: EdgeInsets.all(16),
                   child: Column(
                     children: [
-                      Row(
-                        children: [
-                          Image.asset('assets/images/back.png',
-                              height: 16, width: 8),
-                          SizedBox(width: 20),
-                          Text(
-                            _index == 0
-                                ? "Thông tin cơ bản"
-                                : _index == 1
-                                    ? "Mô tả cơ bản"
-                                    : "Thông tin liên hệ",
-                            style: TextStyle(
-                                color: Color(0xFF222222),
-                                fontSize: 20,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ],
-                      ),
+                      TitleBar(
+                          title: _index == 0
+                              ? "Thông tin cơ bản"
+                              : _index == 1
+                                  ? "Mô tả cơ bản"
+                                  : "Thông tin liên hệ",
+                          callbackFunction: () {
+                            Navigator.pop(context);
+                          }),
                       Container(
                           margin: EdgeInsets.symmetric(vertical: 16),
                           alignment: Alignment.center,

@@ -1,5 +1,6 @@
 import 'dart:developer';
 import 'package:cdmg/view/SubPlusValue.dart';
+import 'package:cdmg/view/TitleBar.dart';
 import 'package:intl/intl.dart';
 
 import 'package:cdmg/view/InputWithDescribe.dart';
@@ -43,22 +44,11 @@ class _khaiToanSoLuocXayDung extends State<KhaiToanSoLuocXayDung> {
                 child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Image.asset('assets/images/back.png', height: 16, width: 8),
-                    SizedBox(width: 20),
-                    Text(
-                      "Khái toán sơ lược",
-                      style: TextStyle(
-                          color: Color(0xFF222222),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w600),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: 16,
-                ),
+                TitleBar(
+                    title: "Khái toán sơ lược",
+                    callbackFunction: () {
+                      Navigator.pop(context);
+                    }),
                 InputWithDescribe(
                     label: 'Diện tích xây dựng',
                     describe: "m",

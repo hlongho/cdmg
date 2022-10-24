@@ -1,6 +1,7 @@
 import 'dart:developer';
 import 'package:cdmg/view/OptionView.dart';
 import 'package:cdmg/view/SubPlusValue.dart';
+import 'package:cdmg/view/TitleBar.dart';
 import 'package:intl/intl.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
@@ -39,22 +40,11 @@ class _huongDanDangTin extends State<HuongDanDangTin> {
                 child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Image.asset('assets/images/back.png', height: 16, width: 8),
-                    SizedBox(width: 20),
-                    Text(
-                      "Hướng dẫn đăng tin",
-                      style: TextStyle(
-                          color: Color(0xFF222222),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w600),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: 16,
-                ),
+                TitleBar(
+                    title: "Hướng dẫn đăng tin",
+                    callbackFunction: () {
+                      Navigator.pop(context);
+                    }),
                 WebView(
                   initialUrl: 'https://api.cafeland.vn/api/app_get_tinh_thanh',
                 )

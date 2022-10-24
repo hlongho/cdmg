@@ -2,6 +2,7 @@ import 'dart:developer';
 import 'package:cdmg/CanThueMua.dart';
 import 'package:cdmg/DangTin.dart';
 import 'package:cdmg/HoTro.dart';
+import 'package:cdmg/ThanhToan.dart';
 import 'package:cdmg/TienIch.dart';
 import 'package:cdmg/view/OptionText.dart';
 import 'package:cdmg/model/MoTaCoBanModel.dart';
@@ -33,20 +34,6 @@ class Main extends StatelessWidget {
                     color: Colors.white,
                     padding: EdgeInsets.all(16),
                     child: Column(children: [
-                      Row(
-                        children: [
-                          Image.asset('assets/images/back.png',
-                              height: 16, width: 8),
-                          SizedBox(width: 20),
-                          Text(
-                            "main",
-                            style: TextStyle(
-                                color: Color(0xFF222222),
-                                fontSize: 20,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ],
-                      ),
                       OptionView(
                           label: "Đăng tin",
                           callbackFunction: () {
@@ -81,6 +68,15 @@ class Main extends StatelessWidget {
                               context,
                               MaterialPageRoute(
                                   builder: (context) => const TienIch()),
+                            );
+                          }),
+                      OptionView(
+                          label: "Thanh toán",
+                          callbackFunction: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const ThanhToan()),
                             );
                           }),
                     ])))));

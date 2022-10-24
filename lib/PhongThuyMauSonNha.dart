@@ -1,5 +1,6 @@
 import 'dart:developer';
 import 'package:cdmg/view/SubPlusValue.dart';
+import 'package:cdmg/view/TitleBar.dart';
 import 'package:intl/intl.dart';
 
 import 'package:cdmg/view/InputWithDescribe.dart';
@@ -39,7 +40,7 @@ class _phongThuyMauSonNha extends State<PhongThuyMauSonNha> {
   String huongNha = "Đông";
   @override
   Widget build(BuildContext context) {
-    const appTitle = "Phong thủy văn phòng";
+    const appTitle = "Phong thủy màu sơn nhà";
     return MaterialApp(
         title: appTitle,
         theme: ThemeData(fontFamily: 'Montserrat'),
@@ -53,22 +54,11 @@ class _phongThuyMauSonNha extends State<PhongThuyMauSonNha> {
                 child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Image.asset('assets/images/back.png', height: 16, width: 8),
-                    SizedBox(width: 20),
-                    Text(
-                      "Phong thủy văn phòng",
-                      style: TextStyle(
-                          color: Color(0xFF222222),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w600),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: 16,
-                ),
+                TitleBar(
+                    title: "Phong thủy màu sơn nhà",
+                    callbackFunction: () {
+                      Navigator.pop(context);
+                    }),
                 OptionText(
                     title: 'Năm sinh của bạn',
                     titleSelectOption: "Năm sinh của bạn",

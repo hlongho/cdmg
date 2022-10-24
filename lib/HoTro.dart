@@ -2,6 +2,7 @@ import 'dart:developer';
 import 'package:cdmg/HuongDanDangTin.dart';
 import 'package:cdmg/view/OptionView.dart';
 import 'package:cdmg/view/SubPlusValue.dart';
+import 'package:cdmg/view/TitleBar.dart';
 import 'package:intl/intl.dart';
 
 import 'package:cdmg/view/InputWithDescribe.dart';
@@ -40,22 +41,11 @@ class _hoTro extends State<HoTro> {
                 child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Image.asset('assets/images/back.png', height: 16, width: 8),
-                    SizedBox(width: 20),
-                    Text(
-                      "Hỗ trợ",
-                      style: TextStyle(
-                          color: Color(0xFF222222),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w600),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: 16,
-                ),
+                TitleBar(
+                    title: "Hỗ trợ",
+                    callbackFunction: () {
+                      Navigator.pop(context);
+                    }),
                 OptionView(
                   label: "Hướng dẫn đăng tin",
                   callbackFunction: () {

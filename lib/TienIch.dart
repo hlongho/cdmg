@@ -10,6 +10,7 @@ import 'package:cdmg/XemTuoiXayNha.dart';
 import 'package:cdmg/XuHuongPhongThuy.dart';
 import 'package:cdmg/view/OptionView.dart';
 import 'package:cdmg/view/SubPlusValue.dart';
+import 'package:cdmg/view/TitleBar.dart';
 import 'package:intl/intl.dart';
 
 import 'package:cdmg/view/InputWithDescribe.dart';
@@ -48,22 +49,11 @@ class _tienIch extends State<TienIch> {
                 child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Image.asset('assets/images/back.png', height: 16, width: 8),
-                    SizedBox(width: 20),
-                    Text(
-                      "Tiện ích",
-                      style: TextStyle(
-                          color: Color(0xFF222222),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w600),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: 16,
-                ),
+                TitleBar(
+                    title: "Tiện ích",
+                    callbackFunction: () {
+                      Navigator.pop(context);
+                    }),
                 OptionView(
                   label: "Tính chi phí vay vốn",
                   callbackFunction: () {
