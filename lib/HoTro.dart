@@ -12,16 +12,16 @@ import 'package:cdmg/model/ThongTinCoBanModel.dart';
 import 'package:cdmg/view/StepEditting.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(const HoTro());
 
-class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+class HoTro extends StatefulWidget {
+  const HoTro({super.key});
 
   @override
-  State<StatefulWidget> createState() => FormState();
+  State<StatefulWidget> createState() => _hoTro();
 }
 
-class FormState extends State<MyApp> {
+class _hoTro extends State<HoTro> {
   Color primaryColor = Color(0xFF005BA0);
   @override
   Widget build(BuildContext context) {

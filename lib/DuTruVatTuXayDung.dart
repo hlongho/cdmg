@@ -10,16 +10,16 @@ import 'package:cdmg/model/ThongTinCoBanModel.dart';
 import 'package:cdmg/view/StepEditting.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(const DuTruVatTuXayDung());
 
-class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+class DuTruVatTuXayDung extends StatefulWidget {
+  const DuTruVatTuXayDung({super.key});
 
   @override
-  State<StatefulWidget> createState() => FormState();
+  State<StatefulWidget> createState() => _duTruVatTuXayDung();
 }
 
-class FormState extends State<MyApp> {
+class _duTruVatTuXayDung extends State<DuTruVatTuXayDung> {
   onPressTinhLai() {
     setState(() {});
   }

@@ -10,16 +10,16 @@ import 'package:cdmg/model/ThongTinCoBanModel.dart';
 import 'package:cdmg/view/StepEditting.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(const PhongThuyMauSonNha());
 
-class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+class PhongThuyMauSonNha extends StatefulWidget {
+  const PhongThuyMauSonNha({super.key});
 
   @override
-  State<StatefulWidget> createState() => FormState();
+  State<StatefulWidget> createState() => _phongThuyMauSonNha();
 }
 
-class FormState extends State<MyApp> {
+class _phongThuyMauSonNha extends State<PhongThuyMauSonNha> {
   onPressTinhLai() {
     setState(() {});
   }
