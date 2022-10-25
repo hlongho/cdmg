@@ -1,9 +1,11 @@
 import 'package:cdmg/CanThueMua.dart';
 import 'package:cdmg/DangTin.dart';
 import 'package:cdmg/HoTro.dart';
+import 'package:cdmg/QuanLyTinDang.dart';
 import 'package:cdmg/ThanhToan.dart';
 import 'package:cdmg/TienIch.dart';
 import 'package:cdmg/view/OptionView.dart';
+import 'package:cdmg/view/QuanLyTinDangItem.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
@@ -59,6 +61,15 @@ class Main extends StatelessWidget {
                               context,
                               MaterialPageRoute(
                                   builder: (context) => const TienIch()),
+                            );
+                          }),
+                      OptionView(
+                          label: "Quản lý tin đăng",
+                          callbackFunction: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const QuanLyTinDang()),
                             );
                           }),
                       OptionView(

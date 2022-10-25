@@ -47,7 +47,7 @@ class _xuHuongPhongThuy extends State<XuHuongPhongThuy> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TitleBar(
-                    title: "Xu hướng phong thủy",
+                    title: appTitle,
                     callbackFunction: () {
                       Navigator.pop(context);
                     }),

@@ -34,7 +34,7 @@ class _thanhToan extends State<ThanhToan> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TitleBar(
-                    title: "Thanh toán",
+                    title: appTitle,
                     callbackFunction: () {
                       Navigator.pop(context);
                     }),

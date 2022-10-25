@@ -38,7 +38,7 @@ class _khaiToanSoLuocXayDung extends State<KhaiToanSoLuocXayDung> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TitleBar(
-                    title: "Khái toán sơ lược",
+                    title: appTitle,
                     callbackFunction: () {
                       Navigator.pop(context);
                     }),

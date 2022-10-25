@@ -92,7 +92,7 @@ class _canThueMua extends State<CanThueMua> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               TitleBar(
-                                  title: "Đăng Tin thuê mua",
+                                  title: appTitle,
                                   callbackFunction: () {
                                     Navigator.pop(context);
                                   }),

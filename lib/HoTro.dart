@@ -34,7 +34,7 @@ class _hoTro extends State<HoTro> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TitleBar(
-                    title: "Hỗ trợ",
+                    title: appTitle,
                     callbackFunction: () {
                       Navigator.pop(context);
                     }),

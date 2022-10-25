@@ -37,7 +37,7 @@ class _duToanChiTietXayNha extends State<DuToanChiTietXayNha> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TitleBar(
-                    title: "Dự toán chi tiết xây nhà",
+                    title: appTitle,
                     callbackFunction: () {
                       Navigator.pop(context);
                     }),

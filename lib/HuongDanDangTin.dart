@@ -31,7 +31,7 @@ class _huongDanDangTin extends State<HuongDanDangTin> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TitleBar(
-                    title: "Hướng dẫn đăng tin",
+                    title: appTitle,
                     callbackFunction: () {
                       Navigator.pop(context);
                     }),

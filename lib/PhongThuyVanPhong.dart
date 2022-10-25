@@ -47,7 +47,7 @@ class _phongThuyVanPhong extends State<PhongThuyVanPhong> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TitleBar(
-                    title: "Phong thủy văn phòng",
+                    title: appTitle,
                     callbackFunction: () {
                       Navigator.pop(context);
                     }),

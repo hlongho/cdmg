@@ -40,7 +40,7 @@ class _tienIch extends State<TienIch> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TitleBar(
-                    title: "Tiện ích",
+                    title: appTitle,
                     callbackFunction: () {
                       Navigator.pop(context);
                     }),

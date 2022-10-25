@@ -55,7 +55,7 @@ class _xemTuoiXayNha extends State<XemTuoiXayNha> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TitleBar(
-                    title: "Xem tuổi xây nhà",
+                    title: appTitle,
                     callbackFunction: () {
                       Navigator.pop(context);
                     }),

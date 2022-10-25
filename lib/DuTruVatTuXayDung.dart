@@ -39,7 +39,7 @@ class _duTruVatTuXayDung extends State<DuTruVatTuXayDung> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TitleBar(
-                    title: "Dự trù vật tư xây dựng",
+                    title: appTitle,
                     callbackFunction: () {
                       Navigator.pop(context);
                     }),

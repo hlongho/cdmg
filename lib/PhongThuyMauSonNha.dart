@@ -47,7 +47,7 @@ class _phongThuyMauSonNha extends State<PhongThuyMauSonNha> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TitleBar(
-                    title: "Phong thủy màu sơn nhà",
+                    title: appTitle,
                     callbackFunction: () {
                       Navigator.pop(context);
                     }),

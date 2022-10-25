@@ -47,7 +47,7 @@ class FormState extends State<ChiPhiVayVon> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TitleBar(
-                    title: "Tính chi phí vay vốn",
+                    title: appTitle,
                     callbackFunction: () {
                       Navigator.pop(context);
                     }),
