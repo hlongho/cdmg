@@ -1,4 +1,5 @@
 import 'dart:developer';
+import 'package:cdmg/NapTienVaoTaiKhoan.dart';
 import 'package:cdmg/view/OptionView.dart';
 import 'package:cdmg/view/TitleBar.dart';
 
@@ -53,6 +54,11 @@ class _thanhToan extends State<ThanhToan> {
                   label: "Nạp tiền vào tài khoản",
                   callbackFunction: () {
                     log("Nạp tiền vào tài khoản");
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const NapTienVaoTaiKhoan()),
+                    );
                   },
                 ),
                 OptionView(
