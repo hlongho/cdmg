@@ -1,24 +1,14 @@
-import 'dart:developer';
 import 'package:cdmg/ChiPhiVayVon.dart';
 import 'package:cdmg/DuToanChiTietXayNha.dart';
 import 'package:cdmg/DuTruVatTuXayDung.dart';
-import 'package:cdmg/HuongDanDangTin.dart';
 import 'package:cdmg/KhaiToanSoLuoc.dart';
 import 'package:cdmg/PhongThuyMauSonNha.dart';
 import 'package:cdmg/PhongThuyVanPhong.dart';
 import 'package:cdmg/XemTuoiXayNha.dart';
 import 'package:cdmg/XuHuongPhongThuy.dart';
 import 'package:cdmg/view/OptionView.dart';
-import 'package:cdmg/view/SubPlusValue.dart';
 import 'package:cdmg/view/TitleBar.dart';
-import 'package:intl/intl.dart';
 
-import 'package:cdmg/view/InputWithDescribe.dart';
-import 'package:cdmg/view/DivideDash.dart';
-import 'package:cdmg/view/OptionText.dart';
-import 'package:cdmg/model/MoTaCoBanModel.dart';
-import 'package:cdmg/model/ThongTinCoBanModel.dart';
-import 'package:cdmg/view/StepEditting.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const TienIch());

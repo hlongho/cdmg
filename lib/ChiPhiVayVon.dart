@@ -1,14 +1,9 @@
-import 'dart:developer';
 import 'dart:ui';
 import 'package:cdmg/view/TitleBar.dart';
 import 'package:intl/intl.dart';
 
-import 'package:cdmg/view/InputWithDescribe.dart';
-import 'package:cdmg/view/DivideDash.dart';
-import 'package:cdmg/view/OptionText.dart';
 import 'package:cdmg/model/MoTaCoBanModel.dart';
 import 'package:cdmg/model/ThongTinCoBanModel.dart';
-import 'package:cdmg/view/StepEditting.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const ChiPhiVayVon());

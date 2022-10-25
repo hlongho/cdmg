@@ -1,16 +1,7 @@
 import 'dart:developer';
-import 'package:cdmg/HuongDanDangTin.dart';
 import 'package:cdmg/view/OptionView.dart';
-import 'package:cdmg/view/SubPlusValue.dart';
 import 'package:cdmg/view/TitleBar.dart';
-import 'package:intl/intl.dart';
 
-import 'package:cdmg/view/InputWithDescribe.dart';
-import 'package:cdmg/view/DivideDash.dart';
-import 'package:cdmg/view/OptionText.dart';
-import 'package:cdmg/model/MoTaCoBanModel.dart';
-import 'package:cdmg/model/ThongTinCoBanModel.dart';
-import 'package:cdmg/view/StepEditting.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const ThanhToan());
@@ -50,10 +41,6 @@ class _thanhToan extends State<ThanhToan> {
                   label: "Quyền lợi & phí duy trì theo năm",
                   callbackFunction: () {
                     log("Quyền lợi và phí duy trì theo năm");
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => HuongDanDangTin()));
                   },
                 ),
                 OptionView(

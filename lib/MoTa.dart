@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:cdmg/model/MoTaCoBanModel.dart';
 import 'package:cdmg/view/InputWithDescribe.dart';
 import 'package:cdmg/view/OptionText.dart';

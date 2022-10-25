@@ -1,19 +1,10 @@
-import 'dart:developer';
 import 'package:cdmg/CanThueMua.dart';
 import 'package:cdmg/DangTin.dart';
 import 'package:cdmg/HoTro.dart';
 import 'package:cdmg/ThanhToan.dart';
 import 'package:cdmg/TienIch.dart';
-import 'package:cdmg/view/OptionText.dart';
-import 'package:cdmg/model/MoTaCoBanModel.dart';
-import 'package:cdmg/model/ThongTinCoBanModel.dart';
 import 'package:cdmg/view/OptionView.dart';
-import 'package:cdmg/view/StepEditting.dart';
 import 'package:flutter/material.dart';
-
-import 'MoTa.dart';
-import 'ThongTinCoBan.dart';
-import 'ThongTinLienHe.dart';
 
 void main() => runApp(MaterialApp(
       title: 'Navigation Basics',

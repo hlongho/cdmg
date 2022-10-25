@@ -1,10 +1,6 @@
-import 'dart:developer';
-
-import 'package:cdmg/model/ThongTinCoBanModel.dart';
 import 'package:cdmg/model/ThongTinLienHeModle.dart';
 import 'package:cdmg/view/InputWithDescribe.dart';
 import 'package:cdmg/view/OptionText.dart';
-import 'package:cdmg/view/SubPlusValue.dart';
 import 'package:flutter/material.dart';
 
 class ThongTinLienHe extends StatefulWidget {

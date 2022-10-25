@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:cdmg/model/ThongTinCoBanModel.dart';
 import 'package:cdmg/view/OptionText.dart';
 import 'package:flutter/material.dart';
