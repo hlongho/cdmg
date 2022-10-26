@@ -1,12 +1,11 @@
-import 'package:cdmg/CanThueMua.dart';
-import 'package:cdmg/DangTin.dart';
-import 'package:cdmg/HoTro.dart';
-import 'package:cdmg/QuanLyTaiChinh.dart';
-import 'package:cdmg/QuanLyTinDang.dart';
-import 'package:cdmg/ThanhToan.dart';
-import 'package:cdmg/TienIch.dart';
+import 'package:cdmg/dang_tin/CanThueMua.dart';
+import 'package:cdmg/dang_tin/DangTin.dart';
+import 'package:cdmg/ho_tro/HoTro.dart';
+import 'package:cdmg/quan_ly_tai_chinh/QuanLyTaiChinh.dart';
+import 'package:cdmg/quan_ly_tin_dang/QuanLyTinDang.dart';
+import 'package:cdmg/thanh_toan/ThanhToan.dart';
+import 'package:cdmg/tien_ich/TienIch.dart';
 import 'package:cdmg/view/OptionView.dart';
-import 'package:cdmg/view/QuanLyTinDangItem.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
