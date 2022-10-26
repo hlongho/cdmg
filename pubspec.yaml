@@ -76,6 +76,12 @@ flutter:
     - assets/images/back.png
     - assets/images/right.png
     - assets/images/down.png
+    - assets/images/thong_tin_so_du.png
+    - assets/images/lich_su_giao_dich.png
+    - assets/images/tang_diem.png
+    - assets/images/lich_su_tang_diem.png
+    - assets/images/tin_nhan_tang_diem.png
+    - assets/images/tin_nhan.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

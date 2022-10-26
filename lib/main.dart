@@ -1,6 +1,7 @@
 import 'package:cdmg/CanThueMua.dart';
 import 'package:cdmg/DangTin.dart';
 import 'package:cdmg/HoTro.dart';
+import 'package:cdmg/QuanLyTaiChinh.dart';
 import 'package:cdmg/QuanLyTinDang.dart';
 import 'package:cdmg/ThanhToan.dart';
 import 'package:cdmg/TienIch.dart';
@@ -70,6 +71,15 @@ class Main extends StatelessWidget {
                               context,
                               MaterialPageRoute(
                                   builder: (context) => const QuanLyTinDang()),
+                            );
+                          }),
+                      OptionView(
+                          label: "Quản lý tài chính",
+                          callbackFunction: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const QuanLyTaiChinh()),
                             );
                           }),
                       OptionView(
