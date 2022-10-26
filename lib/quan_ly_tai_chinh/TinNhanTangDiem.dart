@@ -6,14 +6,9 @@ import 'package:cdmg/view/TitleBar.dart';
 
 import 'package:flutter/material.dart';
 
-class TinNhanTangDiem extends StatefulWidget {
-  const TinNhanTangDiem({super.key});
+class TinNhanTangDiem extends StatelessWidget {
+  TinNhanTangDiem({super.key});
 
-  @override
-  State<StatefulWidget> createState() => _tinNhanTangDiem();
-}
-
-class _tinNhanTangDiem extends State<TinNhanTangDiem> {
   Color primaryColor = Color(0xFF005BA0);
   TextStyle mainStyle = TextStyle(color: Color(0xFF222222), fontSize: 16);
   List giaoDichList = <LichSuGiaoDichModel>[

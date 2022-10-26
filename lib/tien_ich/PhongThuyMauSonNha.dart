@@ -3,8 +3,6 @@ import 'package:cdmg/view/TitleBar.dart';
 import 'package:cdmg/view/OptionText.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(const PhongThuyMauSonNha());
-
 class PhongThuyMauSonNha extends StatefulWidget {
   const PhongThuyMauSonNha({super.key});
 

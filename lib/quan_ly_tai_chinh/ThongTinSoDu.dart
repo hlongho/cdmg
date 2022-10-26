@@ -4,14 +4,9 @@ import 'package:cdmg/view/TitleBar.dart';
 
 import 'package:flutter/material.dart';
 
-class ThongTinSoDu extends StatefulWidget {
-  const ThongTinSoDu({super.key});
+class ThongTinSoDu extends StatelessWidget {
+  ThongTinSoDu({super.key});
 
-  @override
-  State<StatefulWidget> createState() => _thongTinSoDu();
-}
-
-class _thongTinSoDu extends State<ThongTinSoDu> {
   Color primaryColor = Color(0xFF005BA0);
   TextStyle mainStyle = TextStyle(color: Color(0xFF222222), fontSize: 16);
   @override

@@ -5,16 +5,9 @@ import 'package:cdmg/view/TitleBar.dart';
 
 import 'package:flutter/material.dart';
 
-void main() => runApp(const ThanhToan());
+class ThanhToan extends StatelessWidget {
+  ThanhToan({super.key});
 
-class ThanhToan extends StatefulWidget {
-  const ThanhToan({super.key});
-
-  @override
-  State<StatefulWidget> createState() => _thanhToan();
-}
-
-class _thanhToan extends State<ThanhToan> {
   Color primaryColor = Color(0xFF005BA0);
   @override
   Widget build(BuildContext context) {
@@ -57,7 +50,7 @@ class _thanhToan extends State<ThanhToan> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const NapTienVaoTaiKhoan()),
+                          builder: (context) => NapTienVaoTaiKhoan()),
                     );
                   },
                 ),

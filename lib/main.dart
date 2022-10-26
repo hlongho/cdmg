@@ -42,7 +42,7 @@ class Main extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const CanThueMua()),
+                                  builder: (context) => CanThueMua()),
                             );
                           }),
                       OptionView(
@@ -50,8 +50,7 @@ class Main extends StatelessWidget {
                           callbackFunction: () {
                             Navigator.push(
                               context,
-                              MaterialPageRoute(
-                                  builder: (context) => const HoTro()),
+                              MaterialPageRoute(builder: (context) => HoTro()),
                             );
                           }),
                       OptionView(
@@ -69,7 +68,7 @@ class Main extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const QuanLyTinDang()),
+                                  builder: (context) => QuanLyTinDang()),
                             );
                           }),
                       OptionView(
@@ -78,7 +77,7 @@ class Main extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const QuanLyTaiChinh()),
+                                  builder: (context) => QuanLyTaiChinh()),
                             );
                           }),
                       OptionView(
@@ -87,7 +86,7 @@ class Main extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const ThanhToan()),
+                                  builder: (context) => ThanhToan()),
                             );
                           }),
                     ])))));

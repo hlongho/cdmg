@@ -6,14 +6,9 @@ import 'package:cdmg/view/TitleBar.dart';
 
 import 'package:flutter/material.dart';
 
-class LichSuGiaoDich extends StatefulWidget {
-  const LichSuGiaoDich({super.key});
+class LichSuGiaoDich extends StatelessWidget {
+  LichSuGiaoDich({super.key});
 
-  @override
-  State<StatefulWidget> createState() => _lichSuGiaoDich();
-}
-
-class _lichSuGiaoDich extends State<LichSuGiaoDich> {
   Color primaryColor = Color(0xFF005BA0);
   TextStyle mainStyle = TextStyle(color: Color(0xFF222222), fontSize: 16);
   List giaoDichList = <LichSuGiaoDichModel>[

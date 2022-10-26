@@ -3,16 +3,9 @@ import 'package:cdmg/view/TitleBar.dart';
 
 import 'package:flutter/material.dart';
 
-void main() => runApp(const QuanLyTinDang());
+class QuanLyTinDang extends StatelessWidget {
+  QuanLyTinDang({super.key});
 
-class QuanLyTinDang extends StatefulWidget {
-  const QuanLyTinDang({super.key});
-
-  @override
-  State<StatefulWidget> createState() => _quanLyTinDang();
-}
-
-class _quanLyTinDang extends State<QuanLyTinDang> {
   Color primaryColor = Color(0xFF005BA0);
   @override
   Widget build(BuildContext context) {

@@ -9,11 +9,6 @@ class ChiTietGiaoDich extends StatelessWidget {
   ChiTietGiaoDich({super.key, required this.model});
   final LichSuGiaoDichModel model;
 
-//   @override
-//   State<StatefulWidget> createState() => _chiTietGiaoDich();
-// }
-
-// class _chiTietGiaoDich extends State<ChiTietGiaoDich> {
   Color primaryColor = Color(0xFF005BA0);
   TextStyle mainStyle = TextStyle(color: Color(0xFF222222), fontSize: 16);
   @override

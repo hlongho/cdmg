@@ -4,25 +4,8 @@ import 'package:cdmg/view/TitleBar.dart';
 import 'package:cdmg/view/OptionText.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(const NapTienVaoTaiKhoan());
-
-class NapTienVaoTaiKhoan extends StatefulWidget {
-  const NapTienVaoTaiKhoan({super.key});
-
-  @override
-  State<StatefulWidget> createState() => _napTienVaoTaiKhoan();
-}
-
-class _napTienVaoTaiKhoan extends State<NapTienVaoTaiKhoan> {
-  onPressTinhLai() {
-    setState(() {});
-  }
-
-  cbNamSinh(itemSelected) {
-    setState(() {
-      _soTien = itemSelected;
-    });
-  }
+class NapTienVaoTaiKhoan extends StatelessWidget {
+  NapTienVaoTaiKhoan({super.key});
 
   String _soTien = "";
 
@@ -59,7 +42,9 @@ class _napTienVaoTaiKhoan extends State<NapTienVaoTaiKhoan> {
                     title: '',
                     titleSelectOption: "Vui lòng chọn",
                     datas: soTienList,
-                    callbackFunction: cbNamSinh,
+                    callbackFunction: (itemSlected) {
+                      _soTien = itemSlected;
+                    },
                     selected: _soTien,
                     isRequired: false),
                 SizedBox(height: 16),
@@ -67,7 +52,7 @@ class _napTienVaoTaiKhoan extends State<NapTienVaoTaiKhoan> {
                     margin: EdgeInsets.symmetric(vertical: 12),
                     width: double.infinity,
                     child: ElevatedButton(
-                        onPressed: onPressTinhLai,
+                        onPressed: () {},
                         child: const Text(
                           "Thanh toán",
                           style: TextStyle(fontSize: 16),

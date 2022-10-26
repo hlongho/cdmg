@@ -8,14 +8,9 @@ import 'package:cdmg/view/TitleBar.dart';
 
 import 'package:flutter/material.dart';
 
-class QuanLyTaiChinh extends StatefulWidget {
-  const QuanLyTaiChinh({super.key});
+class QuanLyTaiChinh extends StatelessWidget {
+  QuanLyTaiChinh({super.key});
 
-  @override
-  State<StatefulWidget> createState() => _quanLyTaiChinh();
-}
-
-class _quanLyTaiChinh extends State<QuanLyTaiChinh> {
   Color primaryColor = Color(0xFF005BA0);
   @override
   Widget build(BuildContext context) {

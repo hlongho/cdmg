@@ -135,7 +135,9 @@ class _optionBox extends State<OptionBox> {
                                         (BuildContext context, int index) {
                                       return GestureDetector(
                                         onTap: () {
-                                          widget.selected = searchList[index];
+                                          setState(() {
+                                            widget.selected = searchList[index];
+                                          });
                                           Navigator.pop(context);
                                           widget.callbackFunction(
                                               searchList[index]);

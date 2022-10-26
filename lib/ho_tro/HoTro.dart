@@ -5,16 +5,9 @@ import 'package:cdmg/view/TitleBar.dart';
 
 import 'package:flutter/material.dart';
 
-void main() => runApp(const HoTro());
+class HoTro extends StatelessWidget {
+  HoTro({super.key});
 
-class HoTro extends StatefulWidget {
-  const HoTro({super.key});
-
-  @override
-  State<StatefulWidget> createState() => _hoTro();
-}
-
-class _hoTro extends State<HoTro> {
   Color primaryColor = Color(0xFF005BA0);
   @override
   Widget build(BuildContext context) {

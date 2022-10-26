@@ -4,14 +4,9 @@ import 'package:cdmg/view/TitleBar.dart';
 
 import 'package:flutter/material.dart';
 
-class TangDiemThanhVien extends StatefulWidget {
-  const TangDiemThanhVien({super.key});
+class TangDiemThanhVien extends StatelessWidget {
+  TangDiemThanhVien({super.key});
 
-  @override
-  State<StatefulWidget> createState() => _tangDiemThanhVien();
-}
-
-class _tangDiemThanhVien extends State<TangDiemThanhVien> {
   Color primaryColor = Color(0xFF005BA0);
   TextStyle mainStyle = TextStyle(color: Color(0xFF222222), fontSize: 16);
   @override

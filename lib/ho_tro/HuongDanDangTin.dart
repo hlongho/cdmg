@@ -3,16 +3,9 @@ import 'package:webview_flutter/webview_flutter.dart';
 
 import 'package:flutter/material.dart';
 
-void main() => runApp(const HuongDanDangTin());
+class HuongDanDangTin extends StatelessWidget {
+  HuongDanDangTin({super.key});
 
-class HuongDanDangTin extends StatefulWidget {
-  const HuongDanDangTin({super.key});
-
-  @override
-  State<StatefulWidget> createState() => _huongDanDangTin();
-}
-
-class _huongDanDangTin extends State<HuongDanDangTin> {
   Color primaryColor = Color(0xFF005BA0);
   @override
   Widget build(BuildContext context) {
